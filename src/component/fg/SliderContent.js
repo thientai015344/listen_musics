@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
 import '../css/SliderContent.css';
+import React, { Component } from 'react';
 import { Carousel} from 'react-bootstrap';
 class SliderContent extends Component {
     render() {

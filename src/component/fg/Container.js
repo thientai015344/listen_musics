@@ -1,7 +1,8 @@
 
+import '../css/Container.css';
 import React, { Component } from 'react'
 import ContainerItem from './ContainerItem';
-import '../css/Container.css';
+import Title from './Title';
 
 export default class Container extends Component {
 
@@ -13,9 +14,7 @@ export default class Container extends Component {
         return (
             <div>
                 <div className="container">
-                    <h2 className="title">
-                    {this.props.title}
-                    </h2>
+                    <Title />
                     <div className="containerList">
                         <ContainerItem nameSong ="Cà Phê Và Những Câu Chuyện" singerName=" tăng lê như phúc " />
                        

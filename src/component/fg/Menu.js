@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
 import '../css/menu.css';
+import React, { Component } from 'react';
 
 
 class Menu extends Component {
@@ -17,7 +17,7 @@ class Menu extends Component {
                             <ul id="nav-listMenu"> 
                             {/* ///////////////* song * / */}
                             <li className="navbar-li-song">
-                                <a className="nav-listMenu--Song" href="#section">
+                                <a className="nav-listMenu--Song" to="#section">
                                 Bài hát                   
                                 </a>
                                 <ul className=" subnav-song">
