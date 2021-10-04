@@ -1,6 +1,7 @@
 import '../css/menu.css';
 import React, { Component } from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faUser} from '@fortawesome/free-solid-svg-icons'
 
 class Menu extends Component {
     render() {
@@ -17,7 +18,7 @@ class Menu extends Component {
                             <ul id="nav-listMenu"> 
                             {/* ///////////////* song * / */}
                             <li className="navbar-li-song">
-                                <a className="nav-listMenu--Song" to="#section">
+                                <a className="nav-listMenu--Song" href="#section">
                                 Bài hát                   
                                 </a>
                                 <ul className=" subnav-song">
@@ -355,17 +356,35 @@ class Menu extends Component {
                             </li>    
                             </ul>
                         </div>     
-                        <div className="search">
-                            <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                            </svg>
-                            <input type="text" className="search-input" placeholder="Tìm Kiếm" aria-label="Input group example" aria-describedby="basic-addon1" autoComplete="off" />
+                        <div className="auto-right">
+                            <div className="search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                                <input type="text" className="search-input" placeholder="Tìm Kiếm" aria-label="Input group example" aria-describedby="basic-addon1" autoComplete="off" />
+                            </div>
+                            {/* <div className="user-loggin">
+                                <button  className=" btn-login ">Đăng nhập</button>
+                                <button  className=" btn-regitter ">Đăng ký</button>
+                            </div> */}
+                            <div className="use-user">
+                                <div className="user-picture">
+                                    <FontAwesomeIcon icon ={faUser}  /> 
+                                    <div className="user-logout">
+                                        <ul>
+                                            <li className="item-proflie">
+                                             <a href="#section" className="profile">Trang cá nhân</a>
+                                            </li>
+                                            <li className="item-logout">
+                                             <a href="#section" className="logout">Đăng Xuất</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
                         </div>
-                        <div className="user-loggin">
-                            <button  className=" btn-login ">Đăng nhập</button>
-                            <button  className=" btn-regitter ">Đăng ký</button>
-                        </div>
-                        </div> 
+                    </div> 
                 </div>    
                 
             </div>
@@ -374,3 +393,4 @@ class Menu extends Component {
 }
 
 export default Menu;
+

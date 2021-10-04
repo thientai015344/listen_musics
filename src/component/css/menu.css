@@ -121,24 +121,7 @@
 }
 
 
-.search{
-    display: flex;
-    width: 288px;
-    height:30px;
-    margin: 0 6px;
-    align-items: center;
-    background-color:rgba(203, 201, 201, 1);
-    border-radius: 50px;
-    /* opacity: 0.2; */
-}
-.search-input{
-    color: #625353;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-   
-}
+
 .bi {
     margin: 0 10px;
     cursor: pointer;
@@ -163,10 +146,131 @@
 }
 .btn-regitter {
     background-color: #42b72a;
-    border: none; border-radius: 6px;
+    border: none; border-radius: 6px; 
+}
+
+.auto-right{
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content:space-between;
+}
+.search{
+    display: flex;
+    width: 140%;
+    height:30px;
+    margin: 0 6px;
+    align-items: center;
+    background-color:rgba(203, 201, 201, 1);
+    border-radius: 50px;
+    /* opacity: 0.2; */
+}
+.search-input{
+    color: #625353;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.use-user{
+    float: left;
+}
+
+.user-logout{
+    position : absolute;
+    border: none;
+    width: 150px;
+    height: 130px;
+    border-radius: 4px;
+    box-shadow: 0 3px 8px rgb(3 3 3 / 26%);
+    display: none;
+    
     
 }
+.user-logout::before {
+    content: "";
+    width: 200px;
+    left: 0;
+    height: 10px;
+    position: absolute;
+    top: -6px;
+}
+.user-logout ul li{
+    list-style: none;
+    text-align: left;
+    margin-left: 5px;
+    margin: 14px 0 10px 10px;
+    font-size: 1.2rem ;
  
+ 
+
+}
+
+
+.user-logout ul {
+    padding: 0;
+    margin: 20px 0 0 0;
+    
+}
+.user-logout ul li a{
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0;
+    line-height: 38px;
+    font-size: 1rem;
+    font-weight: 400;
+    display: inline-block;
+    color: var(--text-color);
+
+}
+
+.item-proflie:hover a{
+    
+    background-color: #94d874;
+
+
+}
+
+.item-logout:hover a{
+    background-color: #94d874;
+}
+
+
+
+.logout, .profile{
+    outline: none;
+    border: none;
+
+
+
+}
+
+
+.user-picture{
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: #ced5e3;
+}
+.user-picture:hover {
+    cursor: pointer;
+    background-color: #b9c0cc;
+}
+.user-picture:hover .user-logout{
+    display: block;
+}
+
+.user-picture svg{
+    font-size: 22px;
+    color: #eff2fa;
+    margin: 8px auto;
+}
+
 .img-logo{
     width: 120px;
 }
@@ -175,10 +279,10 @@
     font-weight: 500;
 }
 
+
 .subnav-song{
     position: absolute;
     width: 550px;
-    
     top:42px;
     padding-left: 0;
     background-color: #fff;
