@@ -127,6 +127,9 @@
     cursor: pointer;
    
 }
+.user-loggin{
+    display: flex;
+}
 
 .user-loggin button {
     height:34px;
@@ -387,4 +390,9 @@
 
     display: none; 
 }
+
+
+
+
+
 

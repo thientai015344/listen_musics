@@ -2,8 +2,73 @@ import '../css/menu.css';
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faUser} from '@fortawesome/free-solid-svg-icons'
+import Authen from './authen';
 
 class Menu extends Component {
+    constructor(props) {
+        super(props)
+        this.state ={
+            status:0,
+
+            display:true
+
+        }
+
+    }
+
+    rendermodalogin =() =>(  
+         <Authen />        
+    )   
+
+    renderButtonLogin =() =>(  
+        <div className="user-loggin">
+            <button  className=" btn-login ">Đăng nhập</button>
+            <button  className=" btn-regitter ">Đăng ký</button>
+        </div>          
+    )   
+
+renderUser =() =>(  
+    <div className="use-user">
+        <div className="user-picture">
+            <FontAwesomeIcon icon ={faUser}  /> 
+            <div className="user-logout">
+                <ul>
+                    <li className="item-proflie">
+                    <a href="#section" className="profile">Trang cá nhân</a>
+                    </li>
+                    <li className="item-logout">
+                    <a href="#section" className="logout">Đăng Xuất</a>
+                    </li>
+                </ul>
+            </div>
+        </div>  
+    </div>                
+)
+
+displaycheck =() =>{
+    if(this.state.status === 0){
+        return this.renderButtonLogin();
+        
+    }
+    else{
+
+        return this.renderUser();
+    }
+}
+
+changeiconButton =() =>{
+    if(this.state.status === 0){
+        
+        this.setState({status: 1})
+    }
+    else{
+        this.setState({status: 0})
+    }
+   
+}
+
+
+    
     render() {
         return (
             <div>
@@ -363,28 +428,13 @@ class Menu extends Component {
                                 </svg>
                                 <input type="text" className="search-input" placeholder="Tìm Kiếm" aria-label="Input group example" aria-describedby="basic-addon1" autoComplete="off" />
                             </div>
-                            {/* <div className="user-loggin">
+                            <div className="user-loggin">
                                 <button  className=" btn-login ">Đăng nhập</button>
-                                <button  className=" btn-regitter ">Đăng ký</button>
-                            </div> */}
-                            <div className="use-user">
-                                <div className="user-picture">
-                                    <FontAwesomeIcon icon ={faUser}  /> 
-                                    <div className="user-logout">
-                                        <ul>
-                                            <li className="item-proflie">
-                                             <a href="#section" className="profile">Trang cá nhân</a>
-                                            </li>
-                                            <li className="item-logout">
-                                             <a href="#section" className="logout">Đăng Xuất</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                
-                            </div>
+                                <button className=" btn-regitter ">Đăng ký</button>
+                             </div>    
                         </div>
-                    </div> 
+                    </div>    
+               
                 </div>    
                 
             </div>

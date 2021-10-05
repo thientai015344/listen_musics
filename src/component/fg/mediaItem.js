@@ -45,21 +45,21 @@ class MediaItem extends Component {
     render() {
         return (
             <div className="Wrap">
-                <Title />
+                <Title Bài Hát Mới />
                 <div className="list-item-media ">
-                <div className="media-overlay"></div> 
+                <div className="media-overlay--background"></div> 
                     <div className="item-media">
                         <div className="media-left">
                             <div className="media-picture">
                                 <img className="media-picture--img" src="./img/song/img-song/yeumratnhieu.jpg" alt=""/>
-                                <div className="music-overlay">
-                                    <button className="icon" onClick={() => this.changeiconButton()} >
+                                <div className="media-overlay">
+                                    <button className="mediasong-icon" onClick={() => this.changeiconButton()} >
                                         {this.displaycheck()}
                                     </button>
                                 </div> 
                             </div>                   
                             <div className="decription">
-                                <div className="music_name">
+                                <div className="media-name">
                                     yêu em rất nhiều
                                 </div>
                                 <a href="/" className="singer-name">

@@ -1,90 +1,83 @@
-import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
-const Footer = () => {
-  return (
-    <MDBFooter color="mdb-color" className="font-small lighten-3 pt-4 mt-4">
-      <MDBContainer className="text-center text-md-left">
-        <MDBRow className="my-4">
-          <MDBCol md="4" lg="4">
-            <h5 className="text-uppercase mb-4 font-weight-bold">
-              M-music 
-            </h5>
-            <p>
-              Here you can use rows and columns here to organize your footer
-              content.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-              error amet numquam iure provident voluptate esse quasi,
-              veritatis totam voluptas nostrum.{" "}
-            </p>
-          </MDBCol>
-          <hr className="clearfix w-100 d-md-none" />
-          <MDBCol md="2" lg="2" className="ml-auto">
-            <h5 className="text-uppercase mb-4 font-weight-bold">About</h5>
-            <ul className="list-unstyled">
-              <p>
-                <a href="#!">PROJECTS</a>
-              </p>
-              <p>
-                <a href="#!">ABOUT US</a>
-              </p>
-              <p>
-                <a href="#!">BLOG</a>
-              </p>
-              <p>
-                <a href="#!">AWARDS</a>
-              </p>
-            </ul>
-          </MDBCol>
-          <hr className="clearfix w-100 d-md-none" />
-          <MDBCol md="5" lg="3">
-            <h5 className="text-uppercase mb-4 font-weight-bold">Address</h5>
-            <p>
-              <i className="fa fa-home mr-3" /> New York, NY 10012, US
-            </p>
-            <p>
-              <i className="fa fa-envelope mr-3" /> info@example.com
-            </p>
-            <p>
-              <i className="fa fa-phone mr-3" /> + 01 234 567 88
-            </p>
-            <p>
-              <i className="fa fa-print mr-3" /> + 01 234 567 89
-            </p>
-          </MDBCol>
-          <hr className="clearfix w-100 d-md-none" />
-          <MDBCol md="2" lg="2" className="text-center">
-            <h5 className="text-uppercase mb-4 font-weight-bold">
-              Follow us
-            </h5>
-            <div className="mt-2 ">
-              <a type="button" className="btn-floating btn-small btn-fb">
+
+import '../css/Footer.css'
+import React, { Component } from 'react';
+
+class Footer extends Component {
+  render() {
+    return (
+      <div>
+        <div className="footer-All">
+          <div className="footer1 Wrap">
+            <div className="footer-conten--top">
+                <div className="foooter-contentchillren">
+                  <h5 className="Title-footer">
+                  <img src="./img/logo.png" alt="" className="img-logo" />
+                     </h5>
+                  <p className="contentchillren">Giấy phép mạng xã hội: 3**/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 10/05/2021
+                  </p>
+                </div>
+                <div className="foooter-about">
+                    <h5 className="Title-footer">LIÊN HỆ</h5>
+                    <ul className="list-unstyled">
+                      <li>
+                        <a href="/">Dự Án</a>
+                      </li>
+                      <li>
+                        <a href="/">Liên Hệ</a>
+                      </li>
+                      <li>
+                        <a href="/">BLOG</a>
+                      </li>
+                      <li>
+                        <a href="/">Giải Thưởng</a>
+                      </li>
+                    </ul>
+                </div>
+                <div className="foooter-addres">
+                <h5 className="Title-footer">Địa Chỉ</h5>
+                  <p>
+                      <i className="fa fa-home" /> Hồ Chí Minh,  Việt Nam
+                  </p>
+                  <p>
+                      <i className="fa fa-envelope" /> support@music.vn
+                  </p>
+                  <p>
+                      <i className="fa fa-phone" /> + (028) 62576373
+                  </p>
+                  <p>
+                      <i className="fa fa-print" /> + 028 38 48 58 68
+                  </p>
+                </div>
+                <div className="foooter-folowus">
+                <h5 className="Title-footer">THEO DÕI</h5>
+                <div className="foooter-folowus--icon">
+                <a href = "/" className="facebook">
                 <i className="fab fa-facebook-f" />
-              </a>
-              <a type="button" className="btn-floating btn-small btn-tw">
+                </a>
+                <a href = "/" className="twitter">
                 <i className="fab fa-twitter" />
-              </a>
-              <a type="button" className="btn-floating btn-small btn-gplus">
-                <i className="fab fa-google-plus" />
-              </a>
-              <a type="button" className="btn-floating btn-small btn-dribbble">
-                <i className="fab fa-dribbble" />
-              </a>
+                </a>
+                <a href = "/" className="google">
+                  <i className="fab fa-google-plus" />
+                </a>
+                <a href = "/" className="dribbble">
+                  <i className="fab fa-dribbble" />
+                </a>
+                </div>
+                </div>
             </div>
-          </MDBCol>
-          <hr className="clearfix w-100 d-md-none" />
-        </MDBRow>
-      </MDBContainer>
-      <div className="footer-copyright text-center py-3">
-        <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright:{" "}
-          <a href="https://www.MDBootstrap.com"> M-muic.com </a>
-        </MDBContainer>
+            <div className="footer-conten--bottom">
+                <span className="coppyright">© 2020 Copyright: </span>
+                <a className="coppyright-link">All rights reserved</a>
+            </div>
+          </div>
+        </div>
+        
       </div>
-    </MDBFooter>
-  );
+    );
+  }
 }
 
 export default Footer;
+
