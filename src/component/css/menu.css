@@ -66,6 +66,26 @@
     color: var(--text-color);
     
 }
+a.nav-listMenu--Song.active {
+    background-color: #04AA6D;
+    color: white;
+}
+a.nav-listMenu--charts.active {
+    background-color: #04AA6D;
+    color: white;
+}
+a.nav-listMenu--collection.active {
+    background-color: #04AA6D;
+    color: white;
+}
+a.nav-listMenu--playlist.active {
+    background-color: #04AA6D;
+    color: white;
+}
+a.nav-listMenu--artist.active {
+    background-color: #04AA6D;
+    color: white;
+}
 
 .navbar-li-song:hover>a{
    background-color: rgb(148, 216, 116);

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faUser} from '@fortawesome/free-solid-svg-icons'
 import Authen from './authen';
+import { NavLink } from "react-router-dom";
 
 class Menu extends Component {
     constructor(props) {
@@ -16,9 +17,11 @@ class Menu extends Component {
 
     }
 
-    rendermodalogin =() =>(  
-         <Authen />        
-    )   
+    rendermodalogin =() => {
+    
+         <Authen />  
+    }      
+       
 
     renderButtonLogin =() =>(  
         <div className="user-loggin">
@@ -34,10 +37,10 @@ renderUser =() =>(
             <div className="user-logout">
                 <ul>
                     <li className="item-proflie">
-                    <a href="#section" className="profile">Trang cá nhân</a>
+                    <NavLink to="#section" className="profile">Trang cá nhân</NavLink>
                     </li>
                     <li className="item-logout">
-                    <a href="#section" className="logout">Đăng Xuất</a>
+                    <NavLink to="#section" className="logout">Đăng Xuất</NavLink>
                     </li>
                 </ul>
             </div>
@@ -75,349 +78,349 @@ changeiconButton =() =>{
                 <div className="allNavbar">
                    <div className=" Wrap navbar1">
                         <div className=" nav-logo ">
-                            <a className="navbar-logo" href="#section">
+                            <NavLink className="navbar-logo" to="/">
                             <img src="./img/logo.png" alt="" className="img-logo" />
-                            </a>
+                            </NavLink>
                         </div>  
                         <div className="navbar-list-menu">
                             <ul id="nav-listMenu"> 
                             {/* ///////////////* song * / */}
                             <li className="navbar-li-song">
-                                <a className="nav-listMenu--Song" href="#section">
+                                <NavLink activeClassName="active" className="nav-listMenu--Song " to="/bai-hat">
                                 Bài hát                   
-                                </a>
+                                </NavLink>
                                 <ul className=" subnav-song">
                                 <li className="subnav-song--list-item">
                                     <ul style={{width: '130px'}} float="left" padding={0}>
                                     <li>
-                                        <a className=" blod-text Text-header" href="#section">
-                                        Việt Nam</a> 
+                                        <NavLink className=" blod-text Text-header" to="/viet-nam">
+                                        Việt Nam</NavLink> 
                                     </li>
-                                    <li><a href="#section">
+                                    <li><NavLink to="#section">
                                         Nhạc trẻ
-                                        </a> 
+                                        </NavLink> 
                                     </li>
-                                    <li><a href="#section">
+                                    <li><NavLink to="#section">
                                         Trữ Tình
-                                        </a>
+                                        </NavLink>
                                     </li>
-                                    <li><a href="#section">
+                                    <li><NavLink to="#section">
                                         Remix Việt
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Rap Việt
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         tiền chiến
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Nhạc Trịnh 
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Rock Việt
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Cách mạng
-                                        </a></li>
+                                        </NavLink></li>
                                     </ul>
                                     <ul style={{width: '130px'}} float="left">
-                                    <li><a className=" blod-text Text-header" href="#section">
+                                    <li><NavLink className=" blod-text Text-header" to="#section">
                                         Âu Mĩ
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Pop
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Rock
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Dance
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         R&amp;b
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         jazz
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         CounTry
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         LaTin
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Indie
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Âu Mĩ Khác
-                                        </a></li>
+                                        </NavLink></li>
                                     </ul>
                                     <ul style={{width: '130px'}} float="left">
-                                    <li><a className=" blod-text Text-header" href="#section">
+                                    <li><NavLink className=" blod-text Text-header" to="#section">
                                         Châu Á
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Nhạc Hàn
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Nhạc Hoa
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Nhạc Nhật
-                                        </a></li>
-                                    <li><a href="#section">Nhạc Thái</a></li>
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">Nhạc Thái</NavLink></li>
                                     </ul>
                                     <ul style={{width: '130px'}} float="left">
-                                    <li><a className=" blod-text Text-header" href="#section">
+                                    <li><NavLink className=" blod-text Text-header" to="#section">
                                         Khác
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Thiếu Nhi
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Không Lời
-                                        </a></li>
-                                    <li><a href="#section">Beat</a></li>
-                                    <li><a href="#section">Thể loại Khác</a></li>
-                                    <li><a href="#section">Tui hát</a></li>
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">Beat</NavLink></li>
+                                    <li><NavLink to="#section">Thể loại Khác</NavLink></li>
+                                    <li><NavLink to="#section">Tui hát</NavLink></li>
                                     </ul>
                                 </li>               
                                 </ul>
                             </li>
                             {/* /* ////////BXH/////////////////// */} 
                             <li className="navbar-li-charts">
-                                <a className="nav-listMenu--charts" href="#section">
+                                <NavLink activeClassName="active" className="nav-listMenu--charts" to="/BXH">
                                 BXH                  
-                                </a>  
+                                </NavLink>  
                                 <ul className="subnav-charts">
                                 <li>
-                                    <a href="#section">Việt Nam</a>
+                                    <NavLink to="#section">Việt Nam</NavLink>
                                 </li>
                                 <li>
-                                    <a href="#section">Âu Mỹ</a></li>
+                                    <NavLink to="#section">Âu Mỹ</NavLink></li>
                                 <li>
-                                    <a href="#section">Hàn Quốc</a></li>
+                                    <NavLink to="#section">Hàn Quốc</NavLink></li>
                                 </ul>
                             </li>
                             {/* collection */} 
                             <li className="navbar-li-collection">
-                                <a className="nav-listMenu--collection" href="#section">
+                                <NavLink activeClassName="active" className="nav-listMenu--collection" to="/tuyen-tap">
                                 Tuyển tập                  
-                                </a>
+                                </NavLink>
                                 <ul className="subnav-collection">
                                 <li className="subnav-collection--list-item">
                                     <ul style={{width: '130px'}} float="left" padding={0}>
                                     <li>
-                                        <a className=" blod-text Text-header" href="#section">
-                                        Thể Loại</a> 
+                                        <NavLink className=" blod-text Text-header" to="#section">
+                                        Thể Loại</NavLink> 
                                     </li>
-                                    <li><a href="#section">
+                                    <li><NavLink to="#section">
                                         Nhạc trẻ
-                                        </a> 
+                                        </NavLink> 
                                     </li>
-                                    <li><a href="#section">
+                                    <li><NavLink to="#section">
                                         Trữ Tình
-                                        </a>
+                                        </NavLink>
                                     </li>
-                                    <li><a href="#section">
+                                    <li><NavLink to="#section">
                                         Pop
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Nhạc Hàn
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Nhạc hoa
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Soundtrack 
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Không lời
-                                        </a></li>
+                                        </NavLink></li>
                                     </ul>
                                     <ul style={{width: '130px'}} float="left">
-                                    <li><a className=" blod-text Text-header" href="#section">
+                                    <li><NavLink className=" blod-text Text-header" to="#section">
                                         Tâm Trạng
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Buồn
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Hưng phấn
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Nhạy Cảm
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Nhớ Nhung
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Thất tình
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Thư Giãn
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Vui vẻ
-                                        </a></li>
+                                        </NavLink></li>
                                     </ul>
                                     <ul style={{width: '130px'}} float="left">
-                                    <li><a className=" blod-text Text-header" href="#section">
+                                    <li><NavLink className=" blod-text Text-header" to="#section">
                                         Khung Cảnh
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Cafe
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Bar-Club
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Phong Trà
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Tập Gym     
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Lãng Mạn
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Mưa     
-                                        </a></li>
+                                        </NavLink></li>
                                     </ul>
                                     <ul style={{width: '130px'}} float="left">
-                                    <li><a className=" blod-text Text-header" href="#section">
+                                    <li><NavLink className=" blod-text Text-header" to="#section">
                                         Tình Yêu
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Top100
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Weekend
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Chill Out
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Bất Hủ     
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Song Ca
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Mashup     
-                                        </a></li>
+                                        </NavLink></li>
                                     </ul>
                                 </li>      
                                 </ul>
                             </li>
                             {/* playlist */} 
                             <li className="navbar-li-playlist">
-                                <a className="nav-listMenu--playlist" href="#section">
+                                <NavLink activeClassName="active" className="nav-listMenu--playlist" to="/playlist">
                                 playlist                  
-                                </a>
+                                </NavLink>
                                 <ul className="subnav-playlist">
                                 <li className="subnav-playlist--list-item">
                                     <ul style={{width: '130px'}} float="left">
                                     <li>
-                                        <a className=" blod-text Text-header" href="#section">
-                                        Việt Nam</a> 
+                                        <NavLink className=" blod-text Text-header" to="#section">
+                                        Việt Nam</NavLink> 
                                     </li>
-                                    <li><a href="#section">
+                                    <li><NavLink to="#section">
                                         Nhạc trẻ
-                                        </a> 
+                                        </NavLink> 
                                     </li>
-                                    <li><a href="#section">
+                                    <li><NavLink to="#section">
                                         Trữ Tình
-                                        </a>
+                                        </NavLink>
                                     </li>
-                                    <li><a href="#section">
+                                    <li><NavLink to="#section">
                                         Remix Việt
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Rap Việt
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         tiền chiến
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Nhạc Trịnh 
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Rock Việt
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Cách mạng
-                                        </a></li>
+                                        </NavLink></li>
                                     </ul>
                                     <ul style={{width: '130px'}} float="left">
-                                    <li><a className=" blod-text Text-header" href="#section">
+                                    <li><NavLink className=" blod-text Text-header" to="#section">
                                         Âu Mĩ
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Pop
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Rock
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Dance
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         R&amp;b
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         jazz
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         CounTry
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         LaTin
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Indie
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Âu Mĩ Khác
-                                        </a></li>
+                                        </NavLink></li>
                                     </ul>
                                     <ul style={{width: '130px'}} float="left">
-                                    <li><a className=" blod-text Text-header" href="#section">
+                                    <li><NavLink className=" blod-text Text-header" to="#section">
                                         Châu Á
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Nhạc Hàn
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Nhạc Hoa
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Nhạc Nhật
-                                        </a></li>
-                                    <li><a href="#section">Nhạc Thái</a></li>
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">Nhạc Thái</NavLink></li>
                                     </ul>
                                     <ul style={{width: '130px'}} float="left">
-                                    <li><a className=" blod-text Text-header" href="#section">
+                                    <li><NavLink className=" blod-text Text-header" to="#section">
                                         Khác
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Thiếu Nhi
-                                        </a></li>
-                                    <li><a href="#section">
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">
                                         Không Lời
-                                        </a></li>
-                                    <li><a href="#section">Beat</a></li>
-                                    <li><a href="#section">Thể loại Khác</a></li>
-                                    <li><a href="#section">Tui hát</a></li>
+                                        </NavLink></li>
+                                    <li><NavLink to="#section">Beat</NavLink></li>
+                                    <li><NavLink to="#section">Thể loại Khác</NavLink></li>
+                                    <li><NavLink to="#section">Tui hát</NavLink></li>
                                     </ul>
                                 </li>   
                                 </ul>
                             </li>
                             {/* artist */} 
-                            <li className="navbar-li-artist">
-                                <a className="nav-listMenu--artist" href="#section">
+                            <li activeClassName="active" className="navbar-li-artist">
+                                <NavLink className="nav-listMenu--artist" to="/nghe-si">
                                 Nghệ sĩ                 
-                                </a>   
+                                </NavLink>   
                             </li>    
                             </ul>
                         </div>     
@@ -430,7 +433,7 @@ changeiconButton =() =>{
                             </div>
                             <div className="user-loggin">
                                 <button  className=" btn-login ">Đăng nhập</button>
-                                <button className=" btn-regitter ">Đăng ký</button>
+                                <button onClick={() =>this.rendermodalogin()} className=" btn-regitter">Đăng ký</button>
                              </div>    
                         </div>
                     </div>    

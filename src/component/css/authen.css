@@ -98,6 +98,7 @@ p {
         display: flex;
         height: 600px;
         width: 100%;
+        margin-top: 46px;
         max-width: calc(100% - 32%);
         min-height: 200px;
         position: relative;

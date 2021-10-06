@@ -10,9 +10,12 @@ export default class ContainerItem extends Component {
         super(props)
         this.state ={
             status:0
+            
         }
 
     }
+
+ 
 
     renderButtonPlay =() =>(  
             <FontAwesomeIcon icon ={faPause}  />           
@@ -46,31 +49,47 @@ export default class ContainerItem extends Component {
 
 
     render() {
+
+        let {abc } = this.props
+        console.log(' check props', this.props)
+
         return (
    
-            <div>
-                <div className="music-item">
-                    <div className="music-picture">
-                        <a href="#" className="music-picture--link">
-                            <img className="music-picture--img" src="./img/musicPicture/musicPicture_1.png" alt=""/>
-                        </a> 
-                        <div className="music-overlay">
-                            <button className="icon" onClick={() => this.changeiconButton()} >
-                                {this.displaycheck()}
-                            </button>
-                        </div> 
-                    </div>
-                    <div className="">
-                        <a href="#section" className="music_name">
-                            {this.props.nameSong}
-                        </a>
-                        <a href="#section" className="singer-name">
-                            {this.props.singerName}
-                        </a>
-                    </div>
-                </div>
+            <>
+                        {
+                            abc.map((item,index ) =>{
+                                return (
+                        <div key={item.id} className="music-item">
                     
-            </div>
+                                        <div  className="music-picture">
+                                            <a href="#" className="music-picture--link">
+                                                <img className="music-picture--img" src={item.link} alt=""/>
+                                            </a> 
+                                            <div className="music-overlay">
+                                                <button className="icon" onClick={() => this.changeiconButton()} >
+                                                    {this.displaycheck()}
+                                                </button>
+                                            </div> 
+                                    
+                                            <div className="">
+                                                <a href="#section" className="music_name">
+                                                    {item.nameSong}
+                                                </a>
+                                                <a href="#section" className="singer-name">
+                                                    {item.singerName}
+                                                </a>
+                                        </div>
+                                    </div>
+                  
+                                 </div>
+                                )
+
+                            })
+
+
+                        }
+                    
+            </>
         )
            
     }

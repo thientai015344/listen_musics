@@ -7,6 +7,46 @@ import '../css/authen.css'
    
 
 export default class Authen extends Component {
+constructor(props){
+    super(props);
+    this.state = {
+        ussername :"",
+        password :"",
+        rpassword :"",
+        phonenumber :""
+
+    }
+}
+handleGetussername = (event) =>{
+    this.setState({ ussername: event.target.value})
+}
+handleGetpassword = (event) =>{
+    this.setState({ password: event.target.value})
+}
+handleGetrpassword = (event) =>{
+    this.setState({ rpassword: event.target.value})
+}
+handleGetphonNumber = (event) =>{
+    this.setState({ phonenumber: event.target.value})
+}
+
+
+
+hanleRegitter = (event) => {
+    event.preventDefault()
+    if(this.setState.rpassword === this.setState.password){
+        console.log('check date state: ' + this.state)
+        console.log('all state',this.state)
+       
+    }
+    else{
+        alert(" mat khau khon trung nhau")
+
+    }
+}
+
+
+
     render() {
         return (
             <div>
@@ -24,10 +64,21 @@ export default class Authen extends Component {
                                 </div>
                                 <div className="form-login-container">
                                     <div className="login-input">
-                                        <input type="text" placeholder="Tên tài khoản" className="input-login name"/>
-                                        <input type="password" placeholder="mật khẩu" className="input-login password"/>
-                                        <input type="password" placeholder="Nhập lại mật khẩu" className="input-login replace password"/>
-                                        <input type="text" placeholder="Số điện thoại" className="input-login phonenumber"/>
+                                        <input type="text" placeholder="Tên tài khoản"
+                                         value={this.state.ussername}
+                                         onChange={(event) => this.handleGetussername(event)}
+                                        className="input-login name"/>
+                                        <input type="password" placeholder="mật khẩu"
+                                        value={this.state.password}
+                                        onChange={(event) => this.handleGetpassword(event)}
+                                        className="input-login password"/>
+                                        <input type="password" placeholder="Nhập lại mật khẩu"
+                                        value={this.state.rpassword}
+                                        onChange={(event) => this.handleGetrpassword(event)}
+                                         className="input-login replace password"/>
+                                        <input type="text" placeholder="Số điện thoại"
+                                        value={this.state.phonenumber}
+                                        onChange={(event) => this.handleGetphonNumber(event)} className="input-login phonenumber"/>
 
                                     </div>
                                     <div className="attentionn">
@@ -37,7 +88,7 @@ export default class Authen extends Component {
                                                 <a href="/">điều khoản và điều kiện</a>
                                             </div>
                                         </div>
-                                    <button className="button-login">Đăng ký</button>
+                                    <button onClick={ (event)=>this.hanleRegitter(event)} className="button-login">Đăng ký</button>
                                     <div className="form-login-container-line">
                                         <div className="line"></div>
                                         <div className="or">HOẶC</div>
