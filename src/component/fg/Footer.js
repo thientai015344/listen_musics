@@ -2,6 +2,7 @@
 
 import '../css/Footer.css'
 import React, { Component } from 'react';
+import { NavLink } from "react-router-dom";
 
 class Footer extends Component {
   render() {
@@ -21,16 +22,16 @@ class Footer extends Component {
                     <h5 className="Title-footer">LIÊN HỆ</h5>
                     <ul className="list-unstyled">
                       <li>
-                        <a href="/">Dự Án</a>
+                        <NavLink to="/#">Dự Án</NavLink>
                       </li>
                       <li>
-                        <a href="/">Liên Hệ</a>
+                        <NavLink to="/#">Liên Hệ</NavLink>
                       </li>
                       <li>
-                        <a href="/">BLOG</a>
+                        <NavLink to="/#">BLOG</NavLink>
                       </li>
                       <li>
-                        <a href="/">Giải Thưởng</a>
+                        <NavLink to="/#">Giải Thưởng</NavLink>
                       </li>
                     </ul>
                 </div>
@@ -52,16 +53,16 @@ class Footer extends Component {
                 <div className="foooter-folowus">
                 <h5 className="Title-footer">THEO DÕI</h5>
                 <div className="foooter-folowus--icon">
-                <a href = "/" className="facebook">
+                <NavLink to = "/#" className="facebook">
                 <i className="fab fa-facebook-f" />
-                </a>
-                <a href = "/" className="twitter">
+                </NavLink>
+                <NavLink to = "/#" className="twitter">
                 <i className="fab fa-twitter" />
-                </a>
-                <a href = "/" className="google">
+                </NavLink>
+                <a href = "/#" className="google">
                   <i className="fab fa-google-plus" />
                 </a>
-                <a href = "/" className="dribbble">
+                <a href = "/#" className="dribbble">
                   <i className="fab fa-dribbble" />
                 </a>
                 </div>
@@ -69,7 +70,7 @@ class Footer extends Component {
             </div>
             <div className="footer-conten--bottom">
                 <span className="coppyright">© 2020 Copyright: </span>
-                <a className="coppyright-link">All rights reserved</a>
+                <NavLink to="#/" className="coppyright-NavLink">All rights reserved</NavLink>
             </div>
           </div>
         </div>

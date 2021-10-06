@@ -62,7 +62,7 @@ export default class ContainerItem extends Component {
                         <div key={item.id} className="music-item">
                     
                                         <div  className="music-picture">
-                                            <a href="#" className="music-picture--link">
+                                            <a href="/#" className="music-picture--link">
                                                 <img className="music-picture--img" src={item.link} alt=""/>
                                             </a> 
                                             <div className="music-overlay">

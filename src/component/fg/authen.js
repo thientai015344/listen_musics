@@ -34,15 +34,11 @@ handleGetphonNumber = (event) =>{
 
 hanleRegitter = (event) => {
     event.preventDefault()
-    if(this.setState.rpassword === this.setState.password){
+    
         console.log('check date state: ' + this.state)
         console.log('all state',this.state)
        
-    }
-    else{
-        alert(" mat khau khon trung nhau")
-
-    }
+   
 }
 
 
@@ -123,7 +119,7 @@ hanleRegitter = (event) => {
                                 <div className="form-logi-footer-title">
                                     Bạn đã có tài khoản?
                                 </div>
-                                <a href="" className="login">Đăng nhập</a>
+                                <a href="/#" className="login">Đăng nhập</a>
                             </div>
                         </div>
 
