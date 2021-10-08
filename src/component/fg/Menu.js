@@ -71,7 +71,7 @@ changeiconButton =() =>{
 }  
     render() {
         return (
-            <div>
+            <>
                 <div className="allNavbar">
                    <div className=" Wrap navbar1">
                         <div className=" nav-logo ">
@@ -90,7 +90,7 @@ changeiconButton =() =>{
                                 <li className="subnav-song--list-item">
                                     <ul style={{width: '130px'}} float="left" padding={0}>
                                     <li>
-                                        <NavLink className=" blod-text Text-header" to="/viet-nam">
+                                        <NavLink activeclassname="active" className=" blod-text Text-header" to="/bai-hat/viet-nam">
                                         Việt Nam</NavLink> 
                                     </li>
                                     <li><NavLink to="#/">
@@ -312,9 +312,8 @@ changeiconButton =() =>{
                             </li>
                             {/* playlist */} 
                             <li className="navbar-li-playlist">
-                                <NavLink activeclassname="active" className="nav-listMenu--playlist" to="/playlist">
-                                playlist                  
-                                </NavLink>
+                                <NavLink activeclassname="active" className="nav-listMenu--playlist" to="/detail">
+                                        playlist</NavLink>
                                 <ul className="subnav-playlist">
                                 <li className="subnav-playlist--list-item">
                                     <ul style={{width: '130px'}} float="left">
@@ -437,7 +436,7 @@ changeiconButton =() =>{
                
                 </div>    
                 
-            </div>
+            </>
         );
     }
 }

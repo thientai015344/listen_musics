@@ -7,7 +7,7 @@ class SliderContent extends Component {
             <div> 
                 <div className="slider warp ">
                      <Carousel>
-                        <Carousel.Item interval={1000}>
+                        <Carousel.Item interval={3000}>
                             <img
                             className="d-block w-100"
                             src="./img/sliderdonw1_.jpg"
@@ -17,7 +17,7 @@ class SliderContent extends Component {
                             
                             </Carousel.Caption>
                         </Carousel.Item>
-                        <Carousel.Item interval={500}>
+                        <Carousel.Item interval={3000}>
                             <img
                             className="d-block w-100"
                             src="./img/sliderdonw2_.jpg"
@@ -27,7 +27,7 @@ class SliderContent extends Component {
                            
                             </Carousel.Caption>
                         </Carousel.Item>
-                        <Carousel.Item>
+                        <Carousel.Item  interval={3000}>
                             <img
                             className="d-block w-100"
                             src="./img/sliderdonw3_.jpg"
@@ -37,7 +37,7 @@ class SliderContent extends Component {
                            
                             </Carousel.Caption>
                         </Carousel.Item>
-                        <Carousel.Item>
+                        <Carousel.Item  interval={3000}>
                             <img
                             className="d-block w-100"
                             src="./img/sliderdonw4_.jpg"
@@ -47,7 +47,7 @@ class SliderContent extends Component {
                             
                             </Carousel.Caption>
                         </Carousel.Item>
-                        <Carousel.Item>
+                        <Carousel.Item  interval={3000}>
                             <img
                             className="d-block w-100"
                             src="./img/sliderdonw5_.jpg"

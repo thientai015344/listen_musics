@@ -15,5 +15,7 @@
 .containerList{
     
     display: flex;
+    width: 1170px;
+    flex-wrap: wrap;
     
 }

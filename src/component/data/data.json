@@ -1,0 +1,28 @@
+[
+    
+    {
+        "id": "song1",
+         "anh":"../img/song/img-song/yeumratnhieu.jpg" ,
+        "nameSong":"vi em" ,
+         "singerName":"bang kieu"
+    },
+
+    {
+        "id": "song2","anh":"../img/song/img-song/yeumratnhieu.jpg" , "nameSong":"vì yêu" , "singerName":"Chi Đan"
+    },
+    {
+        "id": "song3","anh":"../img/song/img-song/yeumratnhieu.jpg" , "nameSong":"Để em rời xa" , "singerName":"lam chan khang"
+    },
+     {
+       
+        "id": "song4","anh":"../img/song/img-song/yeumratnhieu.jpg" , "nameSong":"Dành cho em" , "singerName":"chi dan"
+    },
+    {
+        "id": "song5","anh":"../img/song/img-song/yeumratnhieu.jpg" , "nameSong":"Yêu em rất nhiều" , "singerName":"chau khai khai"
+    },
+    {
+        "id": "song6","anh":"../img/song/img-song/yeumratnhieu.jpg" , "nameSong":"vì yêu" , "singerName":"Chi Đan"
+    }
+
+
+]

@@ -95,6 +95,11 @@ a.nav-listMenu--artist.active {
 .navbar-li-song:hover .subnav-song{
     display: block; 
 }
+.subnav-song--list-item ul li.active{
+    background-color: #04AA6D;
+    color: white;
+
+}
 
 
 .subnav-song--list-item ul li:hover{

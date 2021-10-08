@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHeart, faLink, faDownload, faPause, faPlay} from '@fortawesome/free-solid-svg-icons'
 import Title from './Title';
 
+
 class MediaItem extends Component {
     constructor(props) {
         super(props)
@@ -44,9 +45,9 @@ class MediaItem extends Component {
     }
     render() {
         return (
-            <div className="Wrap">
+            <div className="Wrap width">
                 <Title Bài Hát Mới />
-                <div className="list-item-media ">
+                <div className="list-item-media  ">
                 <div className="media-overlay--background"></div> 
                     <div className="item-media">
                         <div className="media-left">
