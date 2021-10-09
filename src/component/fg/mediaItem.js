@@ -2,7 +2,7 @@ import '../css/mediaItem.css';
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faHeart, faLink, faDownload, faPause, faPlay} from '@fortawesome/free-solid-svg-icons'
-import Title from './Title';
+
 
 
 class MediaItem extends Component {
@@ -43,16 +43,22 @@ class MediaItem extends Component {
         }
        
     }
+
+   
+
+
+
+
+
     render() {
         return (
-            <div className="Wrap width">
-                <Title Bài Hát Mới />
+            <div key={this.props.id} className="Wrap width">
                 <div className="list-item-media  ">
                 <div className="media-overlay--background"></div> 
                     <div className="item-media">
                         <div className="media-left">
                             <div className="media-picture">
-                                <img className="media-picture--img" src="./img/song/img-song/yeumratnhieu.jpg" alt=""/>
+                                <img className="media-picture--img" src={this.props.anh}  alt=""/>
                                 <div className="media-overlay">
                                     <button className="mediasong-icon" onClick={() => this.changeiconButton()} >
                                         {this.displaycheck()}
@@ -60,17 +66,17 @@ class MediaItem extends Component {
                                 </div> 
                             </div>                   
                             <div className="decription">
-                                <div className="media-name">
-                                    yêu em rất nhiều
+                                <div className="song-name">
+                                 {this.props.nameSong}
                                 </div>
-                                <a href="/" className="singer-name">
-                                    Hoàng Tôn
+                                <a href={"/singer/" + this.props.singerName + ".html"} className="singer-name">
+                                    {this.props.singerName}
                                 </a>
                             </div>
 
                         </div>
                         <div className="media-duration">
-                            04:30
+                        {this.props.duration}
                         </div>
                         <div className="media-right">
                             <div className="media-icon">

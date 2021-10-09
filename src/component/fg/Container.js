@@ -1,8 +1,8 @@
 
 import '../css/Container.css';
 import React, { Component } from 'react'
-import ContainerItem from './ContainerItem.js';
-import Data from '../data/datasong.json'
+import PlaylistItem from './playlistItem.js';
+import Data from '../data/dataplaylist.json'
 
 
 export default class Container extends Component {
@@ -15,7 +15,7 @@ export default class Container extends Component {
         return (
 
             <div>
-                <div className="containerItem">
+                <div className="playlistItem">
                     
                     <div className="containerList">
                         
@@ -24,9 +24,10 @@ export default class Container extends Component {
                             
                             Data.map((value,key) => {
                                 return (
-                                <ContainerItem key={key}
+                                <PlaylistItem key={key}
+                                playlistId={value.id}
                                     anh={value.anh} 
-                                    nameSong={value.nameSong}
+                                    nameplaylist={value.nameplaylist}
                                     singerName={value.singerName}
                                 />
 

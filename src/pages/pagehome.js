@@ -3,29 +3,32 @@ import SliderContent from '../component/fg/SliderContent';
 import Container from '../component/fg/Container';
 import Title from '../component/fg/Title';
 import MediaItem from '../component/fg/mediaItem';
+import Data from '../component/data/datamusic.json'
+
 
 
 class Pagehome extends Component {
     render() {
         return (
-            <div>
+            <>
                 < SliderContent />
                 <Title title="Hôm Nay Nghe Gì" />
-                <Container />
-                <Title title="Bài Hát Mới" />
-                <Container />
-                <Title title="Bài Hát Mới" />
-                <Container />
-                <Title title="Bài Hát Mới" />
-                <Container />
-                <Title title="Bài Hát Mới" />
-                <MediaItem />
-                <MediaItem />
-                <MediaItem />
-                <MediaItem />
-                <MediaItem />
-                <MediaItem />
-            </div>
+                <Container />       
+                {
+                    Data.map((value,key) => {
+                        return (
+                        <MediaItem key={key}
+                        songId={value.id}
+                            anh={value.anh} 
+                            nameSong={value.nameSong}
+                            duration={value.duration}
+                            singerName={value.singerName}
+                        />
+
+                    )})
+                }
+        
+            </>
         );
     }
 }

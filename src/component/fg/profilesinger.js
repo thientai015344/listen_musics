@@ -9,7 +9,7 @@ class Profilesinger extends Component {
                 <div className="profile-all Wrap">
                     <div className="profile-content">
                         <h1 className="profile-Name"  >Hoàng Tôn</h1>
-                        <p ClassName="profile-story">
+                        <p className="profile-story">
                              Hoàng Tôn sinh ra trong gia đình nghệ thuật, mẹ là giảng viên thanh nhạc còn bố là nhạc công guitar.
                             Năm 2013, anh tham gia The Voice, giành giải Á Quân và gây chú ý với giọng hát tốt cùng khả năng
                              tự sáng tác cả hai ca khúc biểu diễn trong chương trình là "Illusion" và "Dành Cho Em".

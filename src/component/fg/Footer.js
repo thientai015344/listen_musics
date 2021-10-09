@@ -13,7 +13,7 @@ class Footer extends Component {
             <div className="footer-conten--top">
                 <div className="foooter-contentchillren">
                   <h5 className="Title-footer">
-                  <img src="./img/logo.png" alt="" className="img-logo" />
+                  <img src="../img/logo/logo.png" alt="" className="img-logo" />
                      </h5>
                   <p className="contentchillren">Giấy phép mạng xã hội: 3**/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 10/05/2021
                   </p>

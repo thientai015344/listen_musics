@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
-import '../css/ContainerItem.css'
+import '../css/playlistItem.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faPause, faPlay} from '@fortawesome/free-solid-svg-icons'
-import { NavLink } from "react-router-dom";
 
 
 
-export default class ContainerItem extends Component {
+
+
+
+
+
+export default class PlaylistItem extends Component {
     constructor(props) {
         super(props)
         this.state ={
@@ -48,6 +52,7 @@ export default class ContainerItem extends Component {
        
     }
 
+ 
 
     render() {
         return (
@@ -57,23 +62,23 @@ export default class ContainerItem extends Component {
                 <div key={this.props.id} className="music-item">
 
                     <div className="music-picture">
-                            <NavLink to="/detail" className="music-picture--link">
+                            <div href ="/detail" className="music-picture--link">
                                 <img className="music-picture--img" src={this.props.anh} alt=""/>
-                            </NavLink> 
-                            <div className="music-overlay">
+                            </div> 
+                            <a href ={"/playlistdetails/" + this.props.nameplaylist + "." + this.props.playlistId + ".html"} className="music-overlay">
                                 <button className="icon" onClick={() => this.changeiconButton()} >
                                     {this.displaycheck()}
                                 </button>
-                            </div>
+                            </a>
                     </div> 
                     
-                    <div className="">
-                        <NavLink to="/detail" className="music_name">
-                            {this.props.nameSong}
-                        </NavLink>
-                        <NavLink to="#section" className="singer-name">
+                    <div className="contet-playlist">
+                        <a href ={"/playlistdetails/" + this.props.nameplaylist + "." + this.props.playlistId + ".html"} className="music_name">
+                            {this.props.nameplaylist}
+                        </a>
+                        <p   className="singer-name">
                             {this.props.singerName}
-                        </NavLink>
+                        </p>
                 </div>
                    
 

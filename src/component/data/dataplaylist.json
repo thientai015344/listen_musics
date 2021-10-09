@@ -1,0 +1,48 @@
+[
+    { 
+       "id" : "song1",
+        "nameplaylist": "chill cùng r&b việt",
+        "singerName" : "sobin hoàng sơn , hoàng tôn ..",
+       "anh": "../img/imgplaylist/playlist1.jpg"
+
+
+    },
+    { 
+       "id": "song2",
+        "nameplaylist": "CHút nắng chút mưa",
+        "singers" : "hoàng tôn, kay trần",
+       "anh": "../img/imgplaylist/playlist2.jpg"
+
+
+    },
+    { 
+       "id": "song3",
+        "nameplaylist": "nhạc nghe vào mùa mưa",
+        "singerName" : "Hứa kim tuyền , noo phước thịnh",
+       "anh": "../img/imgplaylist/playlist3.jpg"
+
+
+    },
+    { 
+       "id":  "song4",
+        "nameplaylist": "nắm đôi tay say cả đời",
+        "singerName" : "Đạt G , trung quân IDO",
+       "anh": "../img/imgplaylist/playlist4.jpg"
+
+
+    },
+    { 
+       "id": "song5",
+        "nameplaylist": "nhạc phim việt nam hay nhất",
+        "singerName" : "Thanh duy , thanh hưng",
+        "anh": "../img/imgplaylist/playlist5.jpg"
+
+
+    }
+
+    
+
+    
+
+
+]

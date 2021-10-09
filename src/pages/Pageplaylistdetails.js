@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import MediaItem from '../component/fg/mediaItem';
-import '../component/css/pagedetail.css';
+import '../component/css/pageplaylistdetails.css';
+
 
 class Pagedetail extends Component {
     render() {
+        console.log(this.props);
         return (
             <>
                 <div className="Detail-background">
@@ -11,7 +13,7 @@ class Pagedetail extends Component {
                         <div className="Detail-position">
                             <div className="content-detail">
                                 <div className="detail-img">
-                                    <img src="./img/avata/hoangton.jpg" alt="" className="img-detail" />
+                                    <img src="../img/avata/hoangton.jpg" alt="" className="img-detail" />
                                 </div>
                                 <h2>Hoàng Tôn</h2>
                                 <div className=""></div>
@@ -27,25 +29,7 @@ class Pagedetail extends Component {
                             
                             <div className="list-media-playlist">
                                 <MediaItem />
-                                <MediaItem />
-                                <MediaItem />
-                                <MediaItem />
-                                <MediaItem />
-                                <MediaItem />
-                                <MediaItem />
-                                <MediaItem />
-                                <MediaItem />
-                                <MediaItem />
-                                <MediaItem />
-                                <MediaItem />
-                                <MediaItem />
-                                <MediaItem />
-                                <MediaItem />
-                                <MediaItem />
-                                <MediaItem />
-                                <MediaItem />
-                                <MediaItem />
-                                <MediaItem />
+                                
                             </div>
                       
                         </div>

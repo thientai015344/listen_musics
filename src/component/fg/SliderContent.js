@@ -10,7 +10,7 @@ class SliderContent extends Component {
                         <Carousel.Item interval={3000}>
                             <img
                             className="d-block w-100"
-                            src="./img/sliderdonw1_.jpg"
+                            src="../img/slider/sliderdonw1_.jpg"
                             alt="First slide"
                             />
                             <Carousel.Caption>
@@ -20,7 +20,7 @@ class SliderContent extends Component {
                         <Carousel.Item interval={3000}>
                             <img
                             className="d-block w-100"
-                            src="./img/sliderdonw2_.jpg"
+                            src="../img/slider/sliderdonw2_.jpg"
                             alt="Second slide"
                             />
                             <Carousel.Caption>
@@ -30,7 +30,7 @@ class SliderContent extends Component {
                         <Carousel.Item  interval={3000}>
                             <img
                             className="d-block w-100"
-                            src="./img/sliderdonw3_.jpg"
+                            src="../img/slider/sliderdonw3_.jpg"
                             alt="Third slide"
                             />
                             <Carousel.Caption>
@@ -40,7 +40,7 @@ class SliderContent extends Component {
                         <Carousel.Item  interval={3000}>
                             <img
                             className="d-block w-100"
-                            src="./img/sliderdonw4_.jpg"
+                            src="../img/slider/sliderdonw4_.jpg"
                             alt="Third slide"
                             />
                             <Carousel.Caption>
@@ -50,7 +50,7 @@ class SliderContent extends Component {
                         <Carousel.Item  interval={3000}>
                             <img
                             className="d-block w-100"
-                            src="./img/sliderdonw5_.jpg"
+                            src="../img/slider/sliderdonw5_.jpg"
                             alt="Third slide"
                             />
                             <Carousel.Caption>

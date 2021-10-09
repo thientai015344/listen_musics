@@ -3,7 +3,7 @@ import Profilesinger from '../component/fg/profilesinger';
 import Container from '../component/fg/Container';
 import Title from '../component/fg/Title';
 
-class PageProfile extends Component {
+class PageProfileSinger extends Component {
     render() {
         return (
             <div>
@@ -22,4 +22,7 @@ class PageProfile extends Component {
     }
 }
 
-export default PageProfile;
+export default PageProfileSinger;
+
+
+
